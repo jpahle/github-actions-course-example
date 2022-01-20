@@ -2,14 +2,6 @@ name: Continuous Integration
 
 on:
   push:
-    branches:
-      - main
-  pull_requests:
-    branches:
-      - main
-  workflow_dispatch:
-  schedule:
-    - cron: "0 5 * * 1"
 
 jobs:
   helloworld:
@@ -18,3 +10,4 @@ jobs:
     steps:
       - name: Greetings from Github Actions
         run: echo Hello World
+
