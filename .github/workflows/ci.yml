@@ -27,6 +27,10 @@ jobs:
     name: Testing on ${{ matrix.os }}
 
     steps:
+      - name: Greetings from the PowerShell
+        if: runner.os == 'Windows'
+        shell: powershell
+        run: Write-Host "Windows PowerShell is greeting"
       - name: Checkout the repository
         uses: actions/checkout@v2
 
