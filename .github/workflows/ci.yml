@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-      - name_ Greetings from Github Actions
+      - name: Greetings from Github Actions
         run: echo Hello World
 
