@@ -32,7 +32,7 @@ jobs:
       - name: Install Python package and requirements
         run: |
 	  python -m pip install .
-	  python -m pip -r requirements-dev.txt
+	  python -m pip install -r requirements-dev.txt
 
       - name: Run Python test
         run: |
